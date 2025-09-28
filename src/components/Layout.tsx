@@ -67,6 +67,12 @@ export default function Layout({ children }: LayoutProps) {
               >
                 Контакты
               </Link>
+              <Link 
+                to="/blog" 
+                className={`transition-colors ${isActive('/blog') ? 'text-primary font-semibold' : 'text-gray-600 hover:text-primary'}`}
+              >
+                Блог
+              </Link>
             </nav>
             
             <Link to="/emergency">
