@@ -1,10 +1,20 @@
+import Layout from "@/components/Layout";
+import SEOHead from "@/components/SEOHead";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Icon from "@/components/ui/icon";
+import { Link } from "react-router-dom";
 
 export default function Index() {
   return (
-    <div className="min-h-screen bg-white">
+    <Layout>
+      <SEOHead
+        title="Главная"
+        description="Профессиональный ремонт бытовой техники в Москве: стиральных машин, холодильников, посудомоечных машин. Выезд мастера в течение часа, ремонт в день обращения, гарантия 1 год."
+        keywords="ремонт бытовой техники, ремонт стиральных машин, ремонт холодильников, ремонт посудомоек, мастер по ремонту техники москва"
+        canonicalUrl="https://techservice.ru"
+      />
+      <div className="min-h-screen bg-white">
       {/* Header */}
       <header className="bg-white shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -438,6 +448,7 @@ export default function Index() {
           </div>
         </div>
       </footer>
-    </div>
+      </div>
+    </Layout>
   );
 }
