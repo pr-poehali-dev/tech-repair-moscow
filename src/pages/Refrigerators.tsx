@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout";
 import SEOHead from "@/components/SEOHead";
+import ContactForm from "@/components/ContactForm";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Icon from "@/components/ui/icon";
@@ -276,27 +277,14 @@ export default function Refrigerators() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 bg-primary">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-white mb-6">
-            Холодильник перестал работать?
-          </h2>
-          <p className="text-xl text-blue-100 mb-8">
-            Срочный ремонт холодильников! Сохраним ваши продукты и восстановим работу техники.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/emergency">
-              <Button size="lg" variant="secondary" className="bg-white text-primary hover:bg-gray-100 px-8 py-4 text-lg">
-                <Icon name="Phone" size={20} className="mr-2" />
-                Срочный вызов
-              </Button>
-            </Link>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary px-8 py-4 text-lg">
-              <Icon name="MessageCircle" size={20} className="mr-2" />
-              Консультация
-            </Button>
-          </div>
+      {/* Contact Form Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <ContactForm 
+            context="refrigerators"
+            title="Холодильник перестал работать?"
+            subtitle="Срочный ремонт холодильников! Сохраним ваши продукты и восстановим работу техники"
+          />
         </div>
       </section>
     </Layout>

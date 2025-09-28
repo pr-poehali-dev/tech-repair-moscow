@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout";
 import SEOHead from "@/components/SEOHead";
+import ContactForm from "@/components/ContactForm";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Icon from "@/components/ui/icon";
@@ -224,20 +225,14 @@ export default function BlogPost() {
             </div>
           </div>
 
-          {/* CTA Section */}
-          <div className="mt-12 p-8 bg-primary text-white rounded-lg text-center">
-            <h3 className="text-2xl font-bold mb-4">
-              Нужна помощь с ремонтом техники?
-            </h3>
-            <p className="text-xl mb-6 opacity-90">
-              Наши эксперты готовы решить любую проблему с вашей техникой
-            </p>
-            <Link to="/emergency">
-              <Button className="bg-white text-primary hover:bg-gray-100 px-8 py-3">
-                <Icon name="Phone" size={16} className="mr-2" />
-                Вызвать мастера
-              </Button>
-            </Link>
+          {/* Contact Form */}
+          <div className="mt-12">
+            <ContactForm 
+              variant="inline"
+              context="blog-post"
+              title="Нужна помощь с ремонтом техники?"
+              subtitle="Наши эксперты готовы решить любую проблему с вашей техникой"
+            />
           </div>
         </div>
 

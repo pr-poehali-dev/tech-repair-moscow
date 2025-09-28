@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout";
 import SEOHead from "@/components/SEOHead";
+import ContactForm from "@/components/ContactForm";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Icon from "@/components/ui/icon";
@@ -405,6 +406,17 @@ export default function Index() {
               </CardContent>
             </Card>
           </div>
+        </div>
+      </section>
+
+      {/* Contact Form Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <ContactForm 
+            context="homepage"
+            title="Остались вопросы? Получите консультацию!"
+            subtitle="Мастер приедет в удобное время и решит любую проблему с техникой"
+          />
         </div>
       </section>
 
