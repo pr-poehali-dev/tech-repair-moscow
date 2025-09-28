@@ -203,7 +203,7 @@ export default function Index() {
             <Card>
               <CardContent className="p-6">
                 <h4 className="font-semibold mb-4">Вызов мастера</h4>
-                <div className="text-2xl font-bold text-primary mb-2">500 ₽</div>
+                <div className="text-2xl font-bold text-primary mb-2">1000 ₽</div>
                 <p className="text-gray-600 text-sm">В пределах МКАД</p>
               </CardContent>
             </Card>
